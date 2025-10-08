@@ -44,7 +44,12 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Hurricane&amp;display=swap" rel="stylesheet"/>
   <link href="css/tema.css" rel="stylesheet"/>
- </head>
+<script>
+    let url = new URL(window.location.href);
+    let param = url.searchParams.get("to");
+    window.namaTamu = decodeURIComponent(param.replace(/\+/g, " "));
+</script>
+</head>
  <body class="bulan-bintang original preset-original" data-template="bulan-bintang">
   <!-- Side to Side -->
   <section class="kat-page_side-to-side">
@@ -78,8 +83,7 @@
         <div class="link-wrap" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1200">
          <p class="greeting-text">
           Hi
-          <span class="data-nama">
-          </span>
+          <span class="data-nama"><script>document.write(window.namaTamu)</script></span>
          </p>
         </div>
        </div>
@@ -323,8 +327,7 @@
         <div class="link-wrap" data-aos="fade-up" data-aos-anchor="#top" data-aos-delay="1200" data-aos-duration="1200" offset="0">
          <p class="greeting-text" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
           Hi
-          <span class="data-nama">
-           <span>
+          <span class="data-nama"><script>document.write(window.namaTamu)</script><span>
            </span>
           </span>
          </p>
@@ -2340,8 +2343,7 @@
       Kepada Yth.
      </p>
      <h3 class="person-name small">
-      <span class="data-nama">
-       <span>
+      <span class="data-nama"><script>document.write(window.namaTamu)</script><span>
        </span>
       </span>
      </h3>
@@ -2352,8 +2354,7 @@
      <p>
      </p>
      <h3 class="person-name large">
-      <span class="data-nama">
-       <span>
+      <span class="data-nama"><script>document.write(window.namaTamu)</script><span>
        </span>
       </span>
      </h3>
